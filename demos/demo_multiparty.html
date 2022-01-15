@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multiparty Chatroom</title>
+        <script type="text/javascript" src="js/prettify/jquery.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="../easyrtc/easyrtc.css" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+        <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="../easyrtc/easyrtc.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/demo_room.css" />
+        <script type="text/javascript" src="js/demo_multiparty.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" />
+
+        <style>
+            #textentryBox {
+                visibility: visible !important;
+            }
+
+            body {
+                background: #344557 url(https://unsplash.imgix.net/photo-1423683249427-8ca22bd873e0?fit=crop&fm=jpg&h=700&q=75&w=1050);
+                background-size: contain;
+                width: 100%;
+            }
+
+            .direct-chat-primary {
+                position: sticky;
+            }
+        </style>
+    </head>
+
+    <body onload="appInit()">
+        <div class="row">
+
+            <div class="col-12 text-center mt-3 mb-3">
+                <h1 style="color: #eee">Welcome to KTR Team Meeting</h1>
+            </div>
+
+            <div class="col-9 col-md-9 col-sm-6">
+                <div class="row">
+                    <div class="col-6 col-sm-6">
+                        <video id="box0" class="transit boxCommon thumbCommon easyrtcMirror" muted="muted" volume="0" autoplay="autoplay" playsinline="playsinline"></video>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <video id="box1" class="transit boxCommon thumbCommon" style="visibility:visible" autoplay="autoplay" playsinline="playsinline"></video>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <video id="box2" class="transit boxCommon thumbCommon" style="visibility:visible" autoplay="autoplay" playsinline="playsinline"></video>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <video id="box3" class="transit boxCommon thumbCommon" style="visibility:visible" autoplay="autoplay" playsinline="playsinline"></video>
+                    </div>
+                </div>
+
+                <div id="fullpage" class="boxCommon">
+                    <img id="killButton" class="transit boxCommon" onclick="killActiveBox()" src="images/button_close.png" style="display:block;z-index:10" alt="close button" />
+                    <img id="muteButton" class="transit boxCommon" onclick ="muteActiveBox()" src="images/button_mute.png" style="display:block;z-index:10" alt="mute button" />
+                    <img id="textEntryButton" class="transit boxCommon" onclick ="showTextEntry()" src="images/textEntry.png" style="z-index:3;display:none" alt="text button" />
+                </div>
+            </div>
+
+            <div class="col-2 col-md-2 col-sm-6 chat-box">
+                <div class="box box-primary direct-chat direct-chat-primary">
+                    <div class="box-header with-border text-center">
+                        <h3 class="box-title">Chat Room</h3>
+                    </div>
+                    <div class="box-body">
+                        <div class="direct-chat-messages" id="message-box">
+                        </div>
+                        <div class="direct-chat-contacts">
+                            <ul class="contacts-list">
+                                <li>
+                                    <a href="#">
+                                        <img class="contacts-list-img" src="https://bootdey.com/img/Content/user_1.jpg">
+
+                                        <div class="contacts-list-info">
+                                            <span class="contacts-list-name">
+                                              Count Dracula
+                                              <small class="contacts-list-date pull-right">2/28/2015</small>
+                                            </span>
+                                            <span class="contacts-list-msg">How have you been? I was...</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="box-footer">
+
+                        <div class="input-group" onsubmit="sendText()" id="textentryBox">
+                            <input type="text" name="message" id="textentryField" placeholder="Type Message ..." class="form-control">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-primary btn-flat" onclick="sendText()">Send</button>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
