@@ -3,7 +3,6 @@
 Installation In A Nutshell
 --------------------------
  1. Install [Node.js](http://nodejs.org)
- 2. Download the EasyRTC distribution from github (https://github.com/open-easyrtc/open-easyrtc.git)
  3. Run `npm install` in the easyrtc directory.
  4. Enter the easyrtc/server_example directory by executing `cd server_example`
  5. Run `npm install` in the server_example directory.
