@@ -14,8 +14,6 @@ Important note: Chrome will not grant access to local microphones or cameras for
 
 Step by step instructions including additional setup options can be found in `/docs/easyrtc_server_install.md`
 
-Note: there is no corresponding need to install the client files specifically; they were installed as part of EasyRTC in step 3.
-
 ## Demo
 [![NPM](https://github.com/AzarguNazari/realtime-chatroom/blob/main/docs/images/welcome-page.png?raw=true)](https://npmjs.org/package/open-easyrtc)
 [![NPM](https://github.com/AzarguNazari/realtime-chatroom/blob/main/docs/images/main-menu-page.png?raw=true)](https://npmjs.org/package/open-easyrtc)
