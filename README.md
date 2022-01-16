@@ -18,5 +18,7 @@ Step by step instructions including additional setup options can be found in `/d
 [![NPM](https://github.com/AzarguNazari/realtime-chatroom/blob/main/docs/images/doc4.png?raw=true)](https://npmjs.org/package/open-easyrtc)
 [![NPM](https://github.com/AzarguNazari/realtime-chatroom/blob/main/docs/images/doc2.png?raw=true)](https://npmjs.org/package/open-easyrtc)
 [![NPM](https://github.com/AzarguNazari/realtime-chatroom/blob/main/docs/images/doc1.png?raw=true)](https://npmjs.org/package/open-easyrtc)
+
+### How it looks like on Phone
 [![NPM](https://github.com/AzarguNazari/realtime-chatroom/blob/main/docs/images/doc5.jpeg?raw=true)](https://npmjs.org/package/open-easyrtc)
 
