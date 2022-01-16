@@ -54,9 +54,9 @@
                 </div>
 
                 <div id="fullpage" class="boxCommon">
-                    <img id="killButton" class="transit boxCommon" onclick="killActiveBox()" src="images/button_close.png" style="display:block;z-index:10" alt="close button" />
-                    <img id="muteButton" class="transit boxCommon" onclick ="muteActiveBox()" src="images/button_mute.png" style="display:block;z-index:10" alt="mute button" />
-                    <img id="textEntryButton" class="transit boxCommon" onclick ="showTextEntry()" src="images/textEntry.png" style="z-index:3;display:none" alt="text button" />
+                    <t id="killButton" class="transit boxCommon" onclick="killActiveBox()" src="images/button_close.png" style="display:none;z-index:10" alt="close button" />
+                    <t id="muteButton" class="transit boxCommon" onclick ="muteActiveBox()" src="images/button_mute.png" style="display:none;z-index:10" alt="mute button" />
+                    <t id="textEntryButton" class="transit boxCommon" onclick ="showTextEntry()" src="images/textEntry.png" style="z-index:3;display:none" alt="text button" />
                 </div>
             </div>
 
@@ -68,27 +68,9 @@
                     <div class="box-body">
                         <div class="direct-chat-messages" id="message-box">
                         </div>
-                        <div class="direct-chat-contacts">
-                            <ul class="contacts-list">
-                                <li>
-                                    <a href="#">
-                                        <img class="contacts-list-img" src="https://bootdey.com/img/Content/user_1.jpg">
-
-                                        <div class="contacts-list-info">
-                                            <span class="contacts-list-name">
-                                              Count Dracula
-                                              <small class="contacts-list-date pull-right">2/28/2015</small>
-                                            </span>
-                                            <span class="contacts-list-msg">How have you been? I was...</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
 
                     <div class="box-footer">
-
                         <div class="input-group" onsubmit="sendText()" id="textentryBox">
                             <input type="text" name="message" id="textentryField" placeholder="Type Message ..." class="form-control">
                             <span class="input-group-btn">
