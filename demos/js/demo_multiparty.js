@@ -633,7 +633,7 @@ function appInit() {
     }
     setReshaper('killButton', killButtonReshaper);
     setReshaper('muteButton', muteButtonReshaper);
-    setReshaper('textentryBox', reshapeTextEntryBox);
+//    setReshaper('textentryBox', reshapeTextEntryBox);
     setReshaper('textEntryButton', reshapeTextEntryButton);
 
     updateMuteImage(false);
