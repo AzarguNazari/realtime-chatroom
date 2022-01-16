@@ -12,22 +12,6 @@
         <script type="text/javascript" src="js/demo_multiparty.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css" />
-
-        <style>
-            #textentryBox {
-                visibility: visible !important;
-            }
-
-            body {
-                background: #344557 url(https://unsplash.imgix.net/photo-1423683249427-8ca22bd873e0?fit=crop&fm=jpg&h=700&q=75&w=1050);
-                background-size: contain;
-                width: 100%;
-            }
-
-            .direct-chat-primary {
-                position: sticky;
-            }
-        </style>
     </head>
 
     <body onload="appInit()">
@@ -53,6 +37,16 @@
                     </div>
                 </div>
 
+
+                <div id="controlButtons" class="row bg-warning rounded">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary" id="muteSwitch">Mute</button>
+                        <button type="button" class="btn btn-danger" id="cancelCall">Cancel Call</button>
+                        <button type="button" class="btn btn-info" id="cameraSwitch">Pause Camera</button>
+                    </div>
+                </div>
+
+
                 <div id="fullpage" class="boxCommon">
                     <t id="killButton" class="transit boxCommon" onclick="killActiveBox()" src="images/button_close.png" style="display:none;z-index:10" alt="close button" />
                     <t id="muteButton" class="transit boxCommon" onclick ="muteActiveBox()" src="images/button_mute.png" style="display:none;z-index:10" alt="mute button" />
@@ -77,11 +71,11 @@
                                 <button type="submit" class="btn btn-primary" onclick="sendText()">Send</button>
                             </span>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
 
     </body>
+    <script src="js/script.js"></script>
 </html>

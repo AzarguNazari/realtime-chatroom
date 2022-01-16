@@ -503,6 +503,7 @@ function prepVideoBox(whichBox) {
     setReshaper(id, reshapeThumbs[whichBox]);
     document.getElementById(id).onclick = function() {
         expandThumb(whichBox);
+        console.log("box number : " + whichBox);
     };
 }
 
@@ -510,6 +511,7 @@ function prepVideoBox(whichBox) {
 function killActiveBox() {
     if( activeBox > 0) {
         var easyrtcid = easyrtc.getIthCaller(activeBox-1);
+        console.log(easyrtcid)
         collapseToThumb();
         setTimeout( function() {
             easyrtc.hangup(easyrtcid);

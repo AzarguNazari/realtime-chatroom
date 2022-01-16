@@ -454,3 +454,31 @@ video {
 .direct-chat-success .right>.direct-chat-text:after, .direct-chat-success .right>.direct-chat-text:before {
     border-left-color: #00a65a;
 }
+
+#textentryBox {
+    visibility: visible !important;
+}
+
+body {
+    background: #344557 url(https://unsplash.imgix.net/photo-1423683249427-8ca22bd873e0?fit=crop&fm=jpg&h=700&q=75&w=1050);
+    background-size: cover;
+    width: 100%;
+}
+
+.direct-chat-primary {
+    position: sticky;
+}
+
+#controlButtons {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+}
+
+#controlButtons {
+    padding: 20px;
+    radius: 20px;
+    z-index: 100;
+    left: 50%;
+    margin-left: -175px;
+}
