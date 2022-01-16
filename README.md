@@ -14,7 +14,9 @@ Important note: Chrome will not grant access to local microphones or cameras for
 Step by step instructions including additional setup options can be found in `/docs/easyrtc_server_install.md`
 
 ## Demo
-[![NPM](https://github.com/AzarguNazari/realtime-chatroom/blob/main/docs/images/welcome-page.png?raw=true)](https://npmjs.org/package/open-easyrtc)
-[![NPM](https://github.com/AzarguNazari/realtime-chatroom/blob/main/docs/images/main-menu-page.png?raw=true)](https://npmjs.org/package/open-easyrtc)
-[![NPM](https://github.com/AzarguNazari/realtime-chatroom/blob/main/docs/images/chat-room-page.png?raw=true)](https://npmjs.org/package/open-easyrtc)
+[![NPM](https://github.com/AzarguNazari/realtime-chatroom/blob/main/docs/images/doc3.png?raw=true)](https://npmjs.org/package/open-easyrtc)
+[![NPM](https://github.com/AzarguNazari/realtime-chatroom/blob/main/docs/images/doc4.png?raw=true)](https://npmjs.org/package/open-easyrtc)
+[![NPM](https://github.com/AzarguNazari/realtime-chatroom/blob/main/docs/images/doc2.png?raw=true)](https://npmjs.org/package/open-easyrtc)
+[![NPM](https://github.com/AzarguNazari/realtime-chatroom/blob/main/docs/images/doc1.png?raw=true)](https://npmjs.org/package/open-easyrtc)
+[![NPM](https://github.com/AzarguNazari/realtime-chatroom/blob/main/docs/images/doc5.jpeg?raw=true)](https://npmjs.org/package/open-easyrtc)
 
